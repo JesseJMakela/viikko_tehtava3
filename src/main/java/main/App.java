@@ -4,15 +4,12 @@
 
 package main;
 
-//import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App 
 {
     public static void main( String[] args ){
         Scanner sc = new Scanner(System.in);
-
-        //ArrayList<Zoo> animals  = new ArrayList<>();
 
         Zoo zoo = new Zoo();
         zoo.zooNimi();

@@ -12,7 +12,9 @@ public class App
         Scanner sc = new Scanner(System.in);
 
         Zoo zoo = new Zoo();
-        zoo.zooNimi();
+        System.out.println("Anna eläintarhalle nimi:");
+        String elaintarha = sc.nextLine();
+        zoo.zooNimi(elaintarha);
 
 
         boolean exit = false;
@@ -30,8 +32,8 @@ public class App
                     System.out.println("Anna eläimen nimi:");
                     String nimi = sc.nextLine();
                     System.out.println("Anna eläimen ikä:");
-                    int ika = sc.nextInt();
-                    sc.nextLine();
+                    String a = sc.nextLine();
+                    int ika = Integer.parseInt(a);
 
                     Animal uusiElain = new Animal(laji, nimi, ika);
                     zoo.newAnimal(uusiElain);
@@ -42,7 +44,10 @@ public class App
                     break;
                     
                     case 3:
-                    zoo.runAnimals();
+                    System.out.println("Kuinka monta kierrosta?");
+                    String b = sc.nextLine();
+                    int kierrokset = Integer.parseInt(b);
+                    zoo.runAnimals(kierrokset);
                     break;
 
                     case 0:

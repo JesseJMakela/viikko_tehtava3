@@ -18,7 +18,7 @@ public class Zoo {
     }
 
     public void listAnimals(){
-        System.out.println(elaintarha+" 0pitää sisällään seuraavat eläimet:");
+        System.out.println(elaintarha+" pitää sisällään seuraavat eläimet:");
         for (Animal animal : animals){
             animal.tulostaTiedot();
         }
